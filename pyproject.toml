@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-drive-cli"
+version = "0.1.0"
+description = "CLI for Google Drive"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "click>=8.1.7",
+  "google-api-python-client>=2.140.0",
+  "google-auth>=2.32.0",
+  "google-auth-oauthlib>=1.2.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2.2",
+  "pytest>=8.2.0",
+]
+
+[project.scripts]
+gdrive = "gdrive_cli.cli:cli"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.setuptools]
+packages = ["gdrive_cli"]
