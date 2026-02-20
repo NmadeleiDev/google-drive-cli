@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/google-drive-cli
+      url: https://pypi.org/p/google-drive-cli-for-agents
     permissions:
       id-token: write
     steps:

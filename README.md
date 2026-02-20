@@ -1,4 +1,4 @@
-# google-drive-cli
+# google-drive-cli-for-agents
 
 CLI for Google Drive using the official Google API Python client.
 
@@ -16,7 +16,7 @@ CLI for Google Drive using the official Google API Python client.
 ```bash
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
-pipx install google-drive-cli
+pipx install google-drive-cli-for-agents
 ```
 
 Verify:
@@ -28,7 +28,7 @@ gdrive --version
 Upgrade:
 
 ```bash
-pipx upgrade google-drive-cli
+pipx upgrade google-drive-cli-for-agents
 ```
 
 ## Install From Source
